@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+*.py[cod]
+.pytest_cache/
+.env
+traces/
+*.jsonl
+.venv/
+environment_files/
+recordings/

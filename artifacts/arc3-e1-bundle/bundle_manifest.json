@@ -1,0 +1,23 @@
+{
+  "bundle": "arc3-e1-bundle",
+  "source": "/Users/infiniteejl/Projects/ARC-AGI-3",
+  "included": [
+    "arc3",
+    "experiments/v2",
+    "kaggle/e1_qwen",
+    "artifacts/public_games.json"
+  ],
+  "excluded": [
+    "environment_files",
+    "traces",
+    "recordings",
+    "results",
+    "__pycache__"
+  ],
+  "target_model_dataset": "foysalemonshanto/qwen3-8-27b-fp8-repacked-v1",
+  "target_model_path": "/kaggle/input/qwen3-8-27b-fp8-repacked-v1/pytorch/hf-fp8/1",
+  "notebook": "kaggle/e1_qwen/e1_qwen.ipynb",
+  "wheelhouse_dataset": "ARC3 vLLM H100 Wheelhouse V3",
+  "wheelhouse_input_slug": "arc3-vllm-h100-wheelhouse-v3",
+  "note": "Attach the target model, this bundle, and the existing ARC3 vLLM H100 Wheelhouse V3; run the notebook with Run All. No new arc3-e1-wheels dataset is required."
+}

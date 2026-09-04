@@ -1,0 +1,21 @@
+{
+  "name": "v2_retrodict_plan_h2_h3",
+  "hypotheses": ["H2", "H3"],
+  "games": ["cd82-fb555c5d", "ls20-9607627b", "lf52-271a04aa"],
+  "seed": 0,
+  "action_budget_per_game": 30,
+  "max_plan_steps": 3,
+  "backend": "HeuristicBackend",
+  "model_config": {"provider": "deterministic", "model": "heuristic-v2"},
+  "prompt_version": "structured-expectation-v1",
+  "intervention": {
+    "counterfactual_action_selection": true,
+    "prediction_verification": true,
+    "replan_on_mismatch": true
+  },
+  "baseline": {
+    "counterfactual_action_selection": false,
+    "prediction_verification": false
+  },
+  "toolkit_mode": "OFFLINE"
+}

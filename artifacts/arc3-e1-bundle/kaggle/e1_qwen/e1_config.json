@@ -1,0 +1,39 @@
+{
+  "experiment": "E1_our_agent_qwen38",
+  "model_id": "/kaggle/input/qwen3-8-27b-fp8-repacked-v1/pytorch/hf-fp8/1",
+  "model_card": "Qwen/Qwen3.8-27B-FP8",
+  "display_name": "Duck v12 + Qwen3.8-27B-FP8 Repacked",
+  "served_model_name": "/kaggle/input/qwen3-8-27b-fp8-repacked-v1/pytorch/hf-fp8/1",
+  "revision": "UNKNOWN",
+  "tokenizer_path": "UNKNOWN until runtime metadata capture",
+  "quantization_metadata": "UNKNOWN until runtime config inspection",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 1234,
+    "tensor_parallel_size": 1,
+    "dtype": "auto",
+    "gpu_memory_utilization": 0.92,
+    "max_model_len": 32768,
+    "trust_remote_code": true,
+    "enable_prefix_caching": true,
+    "reasoning_parser": "qwen3",
+    "tool_call_parser": "qwen3_coder",
+    "enable_thinking": true,
+    "preserve_thinking": true
+  },
+  "benchmark": {
+    "game_set": "small",
+    "games": ["cd82-fb555c5d", "ls20-9607627b", "lf52-271a04aa"],
+    "seed": 0,
+    "max_actions": 30,
+    "toolkit_mode": "OFFLINE"
+  },
+  "policy": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 2048,
+    "max_plan_steps": 3,
+    "enable_prediction": true
+  }
+}
